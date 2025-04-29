@@ -1,93 +1,119 @@
 <!doctype html>
-<html>
+<html class="scroll-behavior">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <nav class="bg-gray-800">
-      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between">
-          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
 
-            <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
-              <span class="absolute -inset-0.5"></span>
-              <span class="sr-only">Open main menu</span>
-  
-              <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-
-              <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-              </svg>
-            </button>
+    <nav class="bg-gray-800 fixed w-full z-10">
+      <div class="container mx-auto flex justify-between items-center px-4 py-3">
+        <div class="text-white font-bold text-xl">
+          <div class="flex shrink-0 items-center">
+            <a href="/Projeto-Eficaz-Tailwind/index.html"><img class="h-8 w-auto bg-gray-700" src="./assets/images/logo.png" alt="Logo"></a>    
           </div>
-          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div class="flex shrink-0 items-center">
-              <a href="/Projeto-Eficaz-Tailwind/index.html"><img class="h-8 w-auto bg-gray-700" src="./assets/images/logo.png" alt="Logo"></a>    
-            </div>
-            <div class="hidden sm:ml-6 sm:block">
-              <div class="flex space-x-4"></div>
-              <a href="./assets/pages/empresa.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Empresa</a>
-                <a href="./assets/pages/disciplina.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Disciplina</a>
-                <a href="./assets/pages/descricaoTema.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Tema</a>
-                <a href="./assets/pages/membros.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Membros</a>
-              </div>
-            </div>
-          </div>
-
-      <div class="sm:hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pt-2 pb-3">
-          <a href="./assets/pages/empresa.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Empresa</a>
-          <a href="./assets/pages/disciplina.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Disciplina</a>
-          <a href="./assets/pages/descricaoTema.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Tema</a>
-          <a href="./assets/pages/membros.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Membros</a>
+        </div>
+        <div class="space-x-4">
+          <a href="#descricao" class="text-gray-300 hover:text-white">Descrição do trabalho</a>
+          <a href="#disciplina" class="text-gray-300 hover:text-white">Disciplina</a>
+          <a href="#empresa" class="text-gray-300 hover:text-white">Empresa</a>
+          <a href="#equipe" class="text-gray-300 hover:text-white">Equipe</a>
         </div>
       </div>
-    </nav> 
-    <section class="bg-gray-100 py-12 px-6">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">Eficaz Marketing</h2>
-        <p class="text-gray-600 mb-8">
-          Somos especialistas em impulsionar marcas com estratégias modernas, criativas e focadas em resultados concretos.
+    </nav>
+
+    <section id="descricao" class="bg-gray-100 py-12 px-6">
+      
+      <section class="bg-white bg-gray-900" >
+        <h3 class=" text-3xl font-medium tracking-tight text-center font-semibold text-blue-500 ">Design do Site</h3>
+        <p class=" text-gray-700 dark:text-gray-700 text-justify mt-6 ml-15 mr-15">
+            Abaixo, você encontrará informações detalhadas sobre o design do sistema, 
+            incluindo os principais elementos visuais, fluxos e funcionalidades planejadas. 
+            Este conteúdo foi preparado para fornecer uma visão clara e objetiva da interface, 
+            visando garantir uma melhor compreensão de como o sistema será apresentado e utilizado. 
+            Para visualizar o design completo e interagir com o protótipo, 
+            clique no link a seguir para acessar o Figma: <a href="https://www.figma.com/design/h6YVYvXrWhsFxUwtTRQdQF/fabrica-de-projeto?node-id=0-1&t=kIc3T78Ya3UNot9H-1" class="text-blue-600 visited:text-purple-600 ..."> Projeto no figma </a>
         </p>
-        <a href="#saiba-mais" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
-          Saiba Mais
-        </a>
-        <a href="./assets/pages/empresa.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" aria-current="page">Empresa</a>
-        <section class="bg-gray-100 py-12 px-6">
-          <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">Disciplinas Aplicadas</h2>
-            <p class="text-gray-600 mb-8">
-              O projeto integra conhecimentos de Análise de Sistemas, Desenvolvimento Web, UX/UI Design e garantindo uma solução moderna, funcional e focada na experiência do usuário.
-            </p>
-            <a href="#disciplinas" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
-              Saiba Mais
-            </a>
-            <a href="./assets/pages/disciplina.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Disciplina</a>
-            <section class="bg-gray-100 py-12 px-6">
-              <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Apresentação do Tema</h2>
-                <p class="text-gray-600 mb-8">
-                  Nesta etapa, vamos apresentar o tema do projeto, explicando seu propósito, objetivos e como ele foi pensado para atender às necessidades da empresa e dos clientes.
-                </p>
-                <a href="#tema-projeto" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
-                  Saiba Mais
-                </a>
-                <a href="./assets/pages/descricaoTema.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Tema</a>
-                <section class="bg-gray-100 py-12 px-6">
-                  <div class="max-w-3xl mx-auto text-center">
-                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Apresentação dos Membros</h2>
-                    <p class="text-gray-600 mb-8">
-                      Em seguida, faremos a apresentação dos membros da equipe, destacando as funções de cada um no projeto e suas principais contribuições para o desenvolvimento da solução.
+    </section>
+
+    <section class="bg-white bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+            <div class="lg:-mx-6 lg:flex lg:items-center">
+                <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-100 h-full rounded-lg lg:h-576px" src="./assets/images/Desktop - 1.png" alt="">
+                <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+                    <p class="text-3xl font-semibold text-blue-500 ">Tela principal</p>
+                    <p class="max-w-lg mt-6 text-gray-700 dark:text-gray-700 text-justify">
+                        A tela principal do sistema apresenta um formulário de cadastro simples e intuitivo, onde o usuário é solicitado a preencher informações essenciais, como nome completo, e-mail, e outros dados necessários para criar uma conta. O design do formulário foi cuidadosamente planejado para garantir uma experiência de preenchimento fácil e sem complicações, com campos organizados de forma clara e objetiva.
+                        Após preencher todos os campos obrigatórios, o usuário poderá clicar no botão "Enviar", que concluirá o processo de cadastro. Este botão, de destaque, confirma que todas as informações foram inseridas corretamente e que o usuário está pronto para seguir para a próxima etapa do sistema.
+                        Logo abaixo, você encontrará uma imagem que ilustra o layout do formulário de cadastro, para que possa visualizar como ele será exibido na tela.
                     </p>
-                    <a href="#membros" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition">
-                      Saiba Mais
-                    </a>
-                    <a href="./assets/pages/membros.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Membros</a>
-                  </div>
-                </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+            <div class="lg:-mx-6 lg:flex lg:items-center">       
+                <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+                    <p class="text-3xl font-semibold text-blue-500 ">Aviso</p>
+                    <p class="max-w-lg mt-6 text-gray-500 dark:text-gray-700 text-justify">
+                        A tela exibe um pop-up de confirmação logo após a conclusão do cadastro do usuário. 
+            Esse pop-up comunica de forma clara que o envio foi realizado com sucesso e agradece pela ação. 
+            Além disso, informa que, em instantes, o usuário receberá um e-mail contendo todas as informações detalhadas sobre o serviço contratado, 
+            incluindo próximos passos e instruções adicionais, caso necessário. O pop-up visa proporcionar uma experiência tranquila ao usuário,
+            confirmando o sucesso do processo e garantindo que ele tenha todos os detalhes necessários para dar continuidade ao serviço.
+                    </p>
+                </div>
+                <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-576px" src="assets/images/Desktop - 3 (1).png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white bg-gray-900">
+        <div class="container px-6 py-10 mx-auto">
+            <div class="lg:-mx-6 lg:flex lg:items-center">
+                <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-100 h-full rounded-lg lg:h-576px" src="./assets/images/email.jpeg" alt="">
+                <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+                    <p class="text-3xl font-semibold text-blue-500 ">E-mail</p>
+                    <p class="max-w-lg mt-6 text-gray-700 dark:text-gray-700 text-justify">
+                        Após o envio do cadastro, o usuário receberá um e-mail de boas-vindas que faz parte do processo de onboarding.
+                Esse e-mail conterá todas as informações necessárias para que o usuário compreenda como funcionará o serviço contratado.
+                No conteúdo, haverá um agradecimento pelo interesse, a confirmação dos dados preenchidos, uma breve explicação sobre o serviço,
+                orientações sobre os próximos passos e informações de contato para suporte. Também poderão ser incluídos links úteis, 
+                como acesso à plataforma, termos de serviço e perguntas frequentes. O objetivo do e-mail é oferecer uma experiência acolhedora, 
+                clara e profissional, garantindo que o usuário se sinta seguro e bem informado desde o primeiro contato.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+
+    <section id="">
+
+    </section>
+
+    <section id="">
+
+    </section>
+
+    <section id="equipe">
+      <div class="bg-white bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">
+        <div>
+          <div class="inline-flex items-center justify-center rounded-md p-2 shadow-lg w-50">
+            <img src="./assets/images/dani.jpeg" alt="membro">
+          </div>
+        </div>
+        <h3 class="text-gray-900 dark:text-gray mt-5 text-base font-medium tracking-tight ">Daniele Barbosa Borges</h3>
+        <p class="text-gray-500 dark:text-gray-400 mt-2 text-sm ">
+          19 Anos, formada em Tecnico de DS, e agora cursando Analise e desenvolvimento de sistemas na UNIMAR.<br>
+          Fez pesquisas para o Design do site, criou os layout em Figma e auxiliou na criação do Front-End com Html e Css, realizando uma interface intuitiva, responsiva e acessivel aos usuarios.
+        </p>
+      </div>  
+    </section>
   </body>
 </html>
